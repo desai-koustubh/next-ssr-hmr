@@ -1,0 +1,33 @@
+{
+  "name": "next-ssr-hmr",
+  "version": "1.0.0",
+  "description": "Combination of SSR and Micro-frontend app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"node scripts/ssr-express.js",
+    "build":"next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "react":"^16.12.0",
+    "react-app-polyfill":"^1.0.5",
+    "react-dev-utils":"^10.0.0",
+    "react-dom":"^16.12.0",
+    "@babel/core":"7.7.4"
+  },
+  "devDependencies": {
+    "express":"^4.17.1",
+    "next":"^9.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desai-koustubh/next-ssr-hmr.git"
+  },
+  "author": "Koustubh Desai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/desai-koustubh/next-ssr-hmr/issues"
+  },
+  "homepage": "https://github.com/desai-koustubh/next-ssr-hmr#readme"
+}
