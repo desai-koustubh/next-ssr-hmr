@@ -5,20 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"node scripts/ssr-express.js",
-    "build":"next build",
+    "dev": "node scripts/ssr-express.js",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "react":"^16.12.0",
-    "react-app-polyfill":"^1.0.5",
-    "react-dev-utils":"^10.0.0",
-    "react-dom":"^16.12.0",
-    "@babel/core":"7.7.4"
+    "react": "^16.12.0",
+    "react-app-polyfill": "^1.0.5",
+    "react-dev-utils": "^10.0.0",
+    "react-dom": "^16.12.0",
+    "@babel/core": "7.7.4"
   },
   "devDependencies": {
-    "express":"^4.17.1",
-    "next":"^9.2.1"
+    "express": "^4.17.1",
+    "next": "^9.2.1"
   },
   "repository": {
     "type": "git",
