@@ -7,14 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node scripts/ssr-express.js",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "next": "next"
   },
   "dependencies": {
+    "@babel/core": "7.7.4",
+    "next-compose-plugins": "^2.2.0",
+    "next-transpile-modules": "^3.0.2",
     "react": "^16.12.0",
     "react-app-polyfill": "^1.0.5",
     "react-dev-utils": "^10.0.0",
-    "react-dom": "^16.12.0",
-    "@babel/core": "7.7.4"
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "express": "^4.17.1",

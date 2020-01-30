@@ -1,15 +1,19 @@
 const express = require('express');
-const next = require('next');
+const nextjs = require('next');
 
 const dev = process.env.NODE_ENV !== 'production';
-const app = next({dev});
+const app = nextjs({dev});
 const handle = app.getRequestHandler();
 
-app.prepare().then(()=>{
-    const server = express();
-    server.get('*',(req,res)=>handle(req,res));
-    server.listen(3000,err=>{
-        if(err) throw err;
-        console.log('>Ready on localhost');
-    })
-})
+(async ()=>{
+    try{
+        const prepare = await app.prepare();
+        const server = express();
+        server.get('*',(req,res)=>handle(req,res));
+        server.listen(3000,err=>{
+                    if(err) {console.log("Got Error on server.listen",err)};
+                    console.log('>Ready on localhost');
+                })
+    }
+    catch(err){throw err;}
+})();
